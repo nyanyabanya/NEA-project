@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+    background-color: rgb(201, 192, 223);
+    font-family:sans-serif;
+  
+  }
+  
+  nav{
+    background: rgb(39, 38, 38);
+    padding:5px 20px;
+  
+  }
+  
+  
+  /* GRID CONTAINER */
+  .grid-row1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(39, 38, 38) ;
+  }
+  
+  
+  ul{
+    list-style-type: none;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration:underline;
+    font-size: 20px;
+  
+  }
+  
+  .play{
+    position:fixed;top:0;
+    text-align: center;
+  }
+  
+  
+  .menu li{
+    float: left;
+    font-size: 16px;
+    padding: 15px 5px;
+  
+    display: block;
+  }
+  
+  .menu li a{
+    width: 5px;
+    display: block;
+  }
+  
+  
+  
+  
+  
+  .logo a{
+    font-size: 20px;
+  }
+  
+  .button2 {
+    border-bottom:1px #444 solid;
+  }
+  
+  /*mobile*/
+  
+  .menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item.button{
+    order:2;
+  }
+  
+  .item.button2{
+    order:2;
+  }
+  
+  .item{
+    width: 100%;
+    text-align: center;
+    order:3;
+    display:block;
+  
+  }
+  
+  
+  .bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+  
+  .bars::before,.bars::after{
+    background: #999;
+    content:"";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+  }
+  
+  .bars::before{
+    top:5px;
+  }
+  
+  .bars::after{
+    top:-5px;
+  }
+  
+  /*tablet menu*/
+  @media all and (min-width:468px){
+    .menu{
+      justify-content: center;
+    }
+  
+  .logo{
+    flex:1;
+  }
+  
+  .button{
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  
+  .button2{
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  
+  .button2{
+    border: 0;
+  }
+  .button a{
+    padding: 7px 15px;
+    background-color: teal;
+    border: 1px solid #006d6d;
+    border-radius: 50em;
+  }
+  
+  .button2 a{
+    padding: 7px 15px;
+    background-color: teal;
+    border: 1px solid #006d6d;
+    border-radius: 50em;
+    background-color: transparent;
+  }
+  
+  .button a:hover{
+    transition: all .25s;
+  }
+  
+  .button2 a:hover{
+    transition: all .25s;
+  }
+  }
+  
+  
+  
+  @media all and(min-width: 760px){
+    .item{
+      display: inline-block;
+      width: auto;
+  
+  }
+  
+    .logo{
+      order: 0;
+    }
+  
+    .item{
+      order: 1;
+    }
+    .button{
+      order: 2;
+    }
+  
+    .button{
+      order: 2
+    }
+  
+    .menu li{
+      padding: 15px 10px;
+    }
+  
+    .menu li.button{
+      padding-right: 0;
+    }
+  
+    .menu li.button2{
+      padding-right: 0;
+    }
+  }
+  
+  

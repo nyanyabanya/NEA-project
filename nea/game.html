@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    {% if title %}
+        <title>Wordle - {{ title }}</title>
+    {% else %}
+        <title>Game</title>
+    {% endif %}
+</head>
+    <body>
+            <form action="" method="POST">
+                <div class="grid-row1">
+                    <p><input placeholder="1" id="L1"></p>
+                    <p><input placeholder="2" id="L2"></p>
+                    <p><input placeholder="3" id="L3"></p>
+                    <p><input placeholder="4" id="L4"></p>
+                    <p><input placeholder="5" id="L5"></p>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+    	</body>
+</html>
